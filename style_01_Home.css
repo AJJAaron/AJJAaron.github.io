@@ -57,6 +57,7 @@ a.home {
 
 a.pack-link {
   display: inline-block;
+  font-size: 24px;
   padding: 5px 20px;
   color: White;
   text-decoration: none;
