@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+
+body {
+  background-color: Black;
+}
+
+h2, h3, .nav, .number {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+.header {
+  font-family: 'Rock Salt', cursive;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin: auto;
+  background-color: LawnGreen;
+}
+
+.nav {
+  background-color: Black;
+  border-bottom: 5px solid White;
+  padding: 10px 0;
+}
+
+.pack {
+  background-color: Black;
+  min-width: 600px;
+  max-width: 850px;
+  padding: 20px 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.theme {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verse-container {
+  display: inline-block;
+  width: 48%;
+}
+
+.number {
+  display: inline-block;
+  font-size: 80px;
+  color: LawnGreen;
+  width: 100px;
+  padding-right: 10px;
+}
+
+.verse {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.reference-top, .verse-text {
+  text-align: left;
+}
+
+.reference-end {
+  text-align: right;
+}
+
+a.home {
+  color: Black;
+  text-decoration: none;
+}
+
+a.pack-link {
+  display: inline-block;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+h2 {
+  color: White;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  background-color: LawnGreen;
+  color: Black;
+  font-size: 28px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+p {
+  color: White;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 5px 0;
+}
