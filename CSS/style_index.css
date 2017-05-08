@@ -16,13 +16,14 @@ h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 80px;
   text-align: center;
-  width: 700px;
+  width: 800px;
   margin: auto;
   margin-top: 10%;
 }
 
 .container {
-  width: 700px;
+  width: 800px;
+  padding-top: 20px;
   margin: auto;
   text-align: center;
 }
