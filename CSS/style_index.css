@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+
+body {
+  background: url("https://www.friendsjournal.org/wp-content/uploads/2012/05/iStock_p10.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: DarkOrange;
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.container {
+  background-color: Crimson;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+a.button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+  color: White;
+  text-decoration: none;
+}
