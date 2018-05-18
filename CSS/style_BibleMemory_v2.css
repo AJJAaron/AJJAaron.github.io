@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+}
+
+body {
+  background-color: Black;
+}
+
+h2, h3, .nav-content, .number {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+  background-color: Gold;
+}
+
+.pack-header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.nav-container {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.nav-content {
+  border: 2px solid White;
+  background-color: rgba(50, 50, 50, 0.9);
+  width: 350px;
+  padding: 10px 0px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.nav-content a {
+  float: none;
+  display: block;
+  width: inherit;
+  text-align: left;
+}
+
+.packA {
+  background-color: Black;
+  min-width: 600px;
+  max-width: 850px;
+  padding: 20px 20px;
+  margin: auto;
+}
+
+.packB {
+  background-color: Black;
+  min-width: 600px;
+  max-width: 850px;
+  padding: 20px 20px;
+  margin: auto;
+  display: none;
+}
+
+.theme {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verse-container {
+  display: inline-block;
+  width: 48%;
+}
+
+.number {
+  display: inline-block;
+  font-size: 80px;
+  color: Gold;
+  width: 100px;
+  padding-right: 10px;
+}
+
+.verse {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.reference-top, .verse-text {
+  text-align: left;
+}
+
+.reference-end {
+  text-align: right;
+}
+
+a.home {
+  font-family: 'Rock Salt', cursive;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: Black;
+  text-decoration: none;
+}
+
+.material-icons.md-42 {
+  font-size: 42px;
+  cursor: pointer;
+  display: inline-block;
+  color: White;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.material-icons.hidden {
+  display: none;
+}
+
+.packA-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+.packB-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+.packC-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+.packD-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+.packE-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: White;
+  text-decoration: none;
+}
+
+.pack-title {
+  display: inline-block;
+  color: White;
+  font-size: 36px;
+  vertical-align: middle;
+}
+
+.theme-header {
+  background-color: Gold;
+  color: Black;
+  font-size: 28px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+p {
+  color: White;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 5px 0;
+}
