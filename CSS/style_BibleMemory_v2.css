@@ -9,67 +9,235 @@ body {
   background-color: Black;
 }
 
-h2, h3, .nav-content, .number {
+h2, h3, .pack-title, .version-title, .pack-link, .number {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  text-decoration: none;
   margin: auto;
 }
 
 .header {
+  position: fixed;
   text-align: center;
-  margin: auto;
+  width: 100%;
+  height: 100px;
   background-color: Gold;
 }
 
+a.home {
+  font-family: 'Rock Salt', cursive;
+  font-size: 46px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: Black;
+  text-decoration: none;
+  line-height: 100px;
+}
+
+.pack-header-container {
+  position: fixed;
+  margin-top: 100px;
+  background-color: rgb(20, 20, 20);
+  width: 100%;
+  height: 100px;
+  font-size: 0px;
+}
+
+.pack-header, .pop-up, .pack {
+  min-width: 600px;
+  max-width: 850px;
+  margin: auto;
+}
+
 .pack-header {
-  padding-top: 20px;
+  height: inherit;
+}
+
+.menu-icon-container, .pack-title-container, .version-title-container {
+  display: inline-block;
+  vertical-align: middle;
+  height: inherit;
+}
+
+.menu-icon-container {
+  width: 10%;
+}
+
+.pack-title-container {
+  width: 80%;
   text-align: center;
 }
 
-.nav-container {
-  display: none;
-  position: absolute;
+.version-title-container {
+  width: 10%;
+  text-align: right;
+}
+
+#menu-icon, .pack-title, .version-title {
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  margin-top: 20px;
+  color: White;
+  cursor: pointer;
+}
+
+.pack-title, .version-title {
+  background-color: rgb(40, 40, 40);
+  font-weight: 600;
+  padding: 0px 15px;
+}
+
+#menu-icon {
+  font-size: 40px;
+}
+
+.pack-title {
+  font-size: 36px;
+}
+
+.version-title {
+  font-size: 22px;
+}
+
+/*Navigation*/
+.pop-up-container {
+  position: fixed;
   z-index: 1;
-  left: 0;
-  right: 0;
+  top: 200px;
+  bottom: 0;
+  width: 100%;
+}
+
+.pop-up {
+  height: 100%;
+}
+
+.sideNav, .packNav, .versionNav {
+  background-color: rgb(40, 40, 40);
+  position: fixed;
+  z-index: 2;
+  top: 200px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sideNav {
+  bottom: 0px;
+  width: 0px;
+}
+
+.packNav {
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+  height: 0px;
+  text-align: center;
+  font-size: 0px;
+}
+
+.versionNav {
+  width: 100px;
+  height: 0px;
+}
+
+#menu-close-icon, #pack-close-icon {
+  color: White;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.nav-content, .version-content {
+  display: block;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-content {
-  border: 2px solid White;
-  background-color: rgba(50, 50, 50, 0.9);
-  width: 350px;
-  padding: 10px 0px;
-  margin: auto;
-  margin-top: 10px;
+  margin-top: 50px;
+  padding-left: 20px;
+  font-size: 22px;
 }
 
-.nav-content a {
-  float: none;
+.version-content {
+  margin-top: 15px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 0px;
+}
+
+.menu-link {
   display: block;
-  width: inherit;
-  text-align: left;
+  height: 50px;
+  color: White;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.packA {
-  background-color: Black;
-  min-width: 600px;
-  max-width: 850px;
-  padding: 20px 20px;
-  margin: auto;
+.pack-link {
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  margin: 15px 5px;
+  color: White;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid White;
+  cursor: pointer;
 }
 
-.packB {
-  background-color: Black;
-  min-width: 600px;
-  max-width: 850px;
-  padding: 20px 20px;
-  margin: auto;
-  display: none;
+.floatContainer {
+  width: 100px;
+  float: right;
+}
+
+.check-icon {
+  display: inline-block;
+  height: 40px;
+  width: 30px;
+  line-height: 40px;
+  padding-top: 5px;
+  color: White;
+  vertical-align: top;
+  font-size: 10px;
+}
+
+.version-link {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding: 0px;
+  color: White;
+  vertical-align: top;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hidden-icon {
+  color: rgb(40, 40, 40);
+}
+
+/*Pack Content*/
+.pack {
+  padding-top: 200px;
 }
 
 .theme {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.theme-header {
+  background-color: Gold;
+  color: Black;
+  font-size: 28px;
+  padding: 5px 0;
+  margin-bottom: 10px;
 }
 
 .verse-container {
@@ -97,82 +265,6 @@ h2, h3, .nav-content, .number {
 
 .reference-end {
   text-align: right;
-}
-
-a.home {
-  font-family: 'Rock Salt', cursive;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: Black;
-  text-decoration: none;
-}
-
-.material-icons.md-42 {
-  font-size: 42px;
-  cursor: pointer;
-  display: inline-block;
-  color: White;
-  vertical-align: middle;
-  position: absolute;
-}
-
-.material-icons.hidden {
-  display: none;
-}
-
-.packA-link {
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px 20px;
-  color: White;
-  text-decoration: none;
-}
-
-.packB-link {
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px 20px;
-  color: White;
-  text-decoration: none;
-}
-
-.packC-link {
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px 20px;
-  color: White;
-  text-decoration: none;
-}
-
-.packD-link {
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px 20px;
-  color: White;
-  text-decoration: none;
-}
-
-.packE-link {
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px 20px;
-  color: White;
-  text-decoration: none;
-}
-
-.pack-title {
-  display: inline-block;
-  color: White;
-  font-size: 36px;
-  vertical-align: middle;
-}
-
-.theme-header {
-  background-color: Gold;
-  color: Black;
-  font-size: 28px;
-  padding: 5px 0;
-  margin-bottom: 10px;
 }
 
 p {
