@@ -175,7 +175,7 @@ var cnv = {
     },
     // Pack C
     {
-      title: "C - 神的力量",
+      title: "C - 依靠神的资源",
       bgColor: "DodgerBlue",
       Color: "Black",
       theme: [
