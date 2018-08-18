@@ -32,10 +32,23 @@ function getPack (version, packID) {
   }
 }
 
-var versionArray = [niv, rsv, cnv];
-var currVersion = 0;
+function versionCheck(versionID, packID) {
+  var vStr = versionID.toString();
+  $('#check'+vStr).removeClass("hidden-icon");
+  for (v = 0; v < 4; v++) {
+    if (v != versionID) {
+      vStr = v.toString();
+      $('#check'+vStr).addClass("hidden-icon");
+    }
+  }
+  getPack(versionArray[versionID], packID);
+}
+
+var versionArray = [esv, niv, rsv, cnv];
+var currVersion = 1;
 var currPack = 0;
 getPack (versionArray[currVersion], currPack);
+versionCheck(currVersion, currPack)
 
 $(document).ready(() => {
   $('#menu-icon').on('click', () => {
@@ -81,25 +94,20 @@ $(document).ready(() => {
   });
 
   $('#version-link0').on('click', () => {
-    $('#check0').removeClass("hidden-icon");
-    $('#check1').addClass("hidden-icon");
-    $('#check2').addClass("hidden-icon");
-    getPack(versionArray[0],currPack)
+    versionCheck(0, currPack);
     currVersion = 0;
   });
   $('#version-link1').on('click', () => {
-    $('#check1').removeClass("hidden-icon");
-    $('#check0').addClass("hidden-icon");
-    $('#check2').addClass("hidden-icon");
-    getPack(versionArray[1],currPack)
+    versionCheck(1, currPack);
     currVersion = 1;
   });
   $('#version-link2').on('click', () => {
-    $('#check2').removeClass("hidden-icon");
-    $('#check0').addClass("hidden-icon");
-    $('#check1').addClass("hidden-icon");
-    getPack(versionArray[2],currPack)
+    versionCheck(2, currPack);
     currVersion = 2;
+  });
+  $('#version-link3').on('click', () => {
+    versionCheck(3, currPack);
+    currVersion = 3;
   });
 
   $('#pack-link0').on('click', () => {
