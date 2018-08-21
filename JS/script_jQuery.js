@@ -96,43 +96,52 @@ $(document).ready(() => {
   $('#version-link0').on('click', () => {
     versionCheck(0, currPack);
     currVersion = 0;
+    ga('send', 'event', 'Version', 'Select', versionArray[0].versionTitle);
   });
   $('#version-link1').on('click', () => {
     versionCheck(1, currPack);
     currVersion = 1;
+    ga('send', 'event', 'Version', 'Select', versionArray[1].versionTitle);
   });
   $('#version-link2').on('click', () => {
     versionCheck(2, currPack);
     currVersion = 2;
+    ga('send', 'event', 'Version', 'Select', versionArray[2].versionTitle);
   });
   $('#version-link3').on('click', () => {
     versionCheck(3, currPack);
     currVersion = 3;
+    ga('send', 'event', 'Version', 'Select', versionArray[3].versionTitle);
   });
 
   $('#pack-link0').on('click', () => {
     getPack (versionArray[currVersion], 0);
     currPack = 0;
     $('.packNav').css("height","0px");
+    ga('send', 'event', 'Pack', 'Select', 'A');
   });
   $('#pack-link1').on('click', () => {
     getPack (versionArray[currVersion], 1);
     currPack = 1;
     $('.packNav').css("height","0px");
+    ga('send', 'event', 'Pack', 'Select', 'B');
   });
   $('#pack-link2').on('click', () => {
     getPack (versionArray[currVersion], 2);
     currPack = 2;
     $('.packNav').css("height","0px");
+    ga('send', 'event', 'Pack', 'Select', 'C');
   });
   $('#pack-link3').on('click', () => {
     getPack (versionArray[currVersion], 3);
     currPack = 3;
     $('.packNav').css("height","0px");
+    ga('send', 'event', 'Pack', 'Select', 'D');
   });
   $('#pack-link4').on('click', () => {
     getPack (versionArray[currVersion], 4);
     currPack = 4;
     $('.packNav').css("height","0px");
+    ga('send', 'event', 'Pack', 'Select', 'E');
   });
 });
