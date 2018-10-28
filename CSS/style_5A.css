@@ -78,33 +78,32 @@ h2, h3, .pack-title, .version-title, .pack-link {
   height: 2rem;
   margin-top: 0.5rem;
   color: White;
-  cursor: pointer;
   white-space: nowrap;
-}
-
-.pack-title, .version-title {
-  background-color: rgb(50, 50, 50);
-  font-weight: 500;
 }
 
 #menu-icon {
   margin-left: 0.3rem;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .pack-title {
-  padding: 0 0.4rem;
-  font-size: 1.0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: default;
 }
 
 .version-title {
+  background-color: rgb(50, 50, 50);
+  font-weight: 500;
   margin-right: 0.2rem;
   width: 3rem;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 /*Navigation*/
-.sideNav, .packNav, .versionNav {
+.sideNav, .versionNav {
   background-color: rgb(50, 50, 50);
   position: fixed;
   z-index: 1;
@@ -116,13 +115,6 @@ h2, h3, .pack-title, .version-title, .pack-link {
 .sideNav {
   bottom: 0;
   width: 0;
-}
-
-.packNav {
-  width: 100%;
-  height: 0;
-  text-align: center;
-  font-size: 0;
 }
 
 .floatContainer {
@@ -156,8 +148,8 @@ h2, h3, .pack-title, .version-title, .pack-link {
 
 .menu-link {
   display: block;
-  line-height: 2rem;
   height: 2rem;
+  line-height: 2rem;
   color: White;
   text-decoration: none;
   white-space: nowrap;
@@ -166,19 +158,6 @@ h2, h3, .pack-title, .version-title, .pack-link {
 #menu-link3 {
   position: relative;
   top: calc(100% - 9rem);
-}
-
-.pack-link {
-  display: inline-block;
-  line-height: 2rem;
-  height: 2rem;
-  width: 2rem;
-  padding: 0;
-  margin: 0.5rem 0.2rem;
-  text-align: center;
-  font-size: 1rem;
-  border: 0.05rem Solid White;
-  cursor: pointer;
 }
 
 .check-icon {
@@ -219,7 +198,7 @@ h2, h3, .pack-title, .version-title, .pack-link {
 }
 
 .theme-header {
-  width: 15rem;
+  width: 18rem;
   border-radius: 0.5rem;
   background-color: Gold;
   color: Black;
@@ -300,8 +279,7 @@ p.verse-text, p.reference-top, p.reference-end, p.number {
   }
 
   .pack-title {
-    padding: 0 0.8rem;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
   }
 
   .version-title {
@@ -310,7 +288,7 @@ p.verse-text, p.reference-top, p.reference-end, p.number {
     font-size: 1.1rem;
   }
 
-  .sideNav, .packNav, .versionNav {
+  .sideNav, .versionNav {
     top: 7rem;
   }
 
@@ -342,14 +320,6 @@ p.verse-text, p.reference-top, p.reference-end, p.number {
     top: calc(100% - 15rem);
   }
 
-  .pack-link {
-    line-height: 3rem;
-    height: 3rem;
-    width: 3rem;
-    margin: 0.5rem 0.2rem;
-    font-size: 1.4rem;
-  }
-
   .check-icon {
     height: 2.5rem;
     width: 2.0rem;
@@ -372,7 +342,7 @@ p.verse-text, p.reference-top, p.reference-end, p.number {
   }
 
   .theme-header {
-    width: 20rem;
+    width: 23rem;
     font-size: 1.5rem;
     padding: 0.5rem 0;
     margin-bottom: 0.5rem;

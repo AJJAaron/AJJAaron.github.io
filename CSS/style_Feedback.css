@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+}
+
+body {
+  background-color: White;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  background-color: Gold;
+  text-align: center;
+}
+
+a.home {
+  line-height: 2rem;
+  font-size: 0.8rem;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 500;
+  color: Black;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pack-header-container {
+  position: fixed;
+  margin-top: 2rem;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(20, 20, 20);
+  font-size: 0px;
+}
+
+.pack {
+  padding-top: 6rem;
+  max-width: 24rem;
+  margin: auto;
+}
+
+.pack-header {
+  height: inherit;
+}
+
+.menu-icon-container, .pack-title-container, .version-title-container {
+  display: inline-block;
+  vertical-align: middle;
+  height: inherit;
+}
+
+.menu-icon-container {
+  width: 15%;
+}
+
+.pack-title-container {
+  width: 70%;
+  text-align: center;
+}
+
+.version-title-container {
+  width: 15%;
+}
+
+.pack-title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+#menu-icon, .pack-title {
+  display: inline-block;
+  line-height: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  color: White;
+  white-space: nowrap;
+}
+
+#menu-icon {
+  margin-left: 0.3rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.pack-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+/*Navigation*/
+.sideNav {
+  bottom: 0;
+  width: 0;
+  background-color: rgb(50, 50, 50);
+  position: fixed;
+  z-index: 2;
+  top: 5rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.nav-content {
+  display: block;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.menu-link {
+  display: block;
+  line-height: 2rem;
+  height: 2rem;
+  color: White;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#menu-link3 {
+  position: relative;
+  top: calc(100% - 9rem);
+}
+
+@media only screen and (orientation: portrait) and (min-width: 600px), (orientation: landscape) and (min-height: 600px) {
+  .header {
+    height: 3rem;
+  }
+
+  a.home {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .pack-header-container {
+    margin-top: 3rem;
+    height: 4rem;
+  }
+
+  .pack-header {
+    margin: 0 1rem;
+  }
+
+  #menu-icon, .pack-title {
+    margin-top: 0.5rem;
+    line-height: 3rem;
+    height: 3rem;
+  }
+
+  #menu-icon {
+    font-size: 2.0rem;
+  }
+
+  .pack-title {
+    font-size: 2.0rem;
+  }
+
+  .sideNav {
+    top: 7rem;
+  }
+
+  .nav-content {
+    padding-top: 1.0rem;
+    padding-left: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .menu-link {
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  #menu-link3 {
+    top: calc(100% - 15rem);
+  }
+
+  .pack {
+    padding-top: 8rem;
+    max-width: 50rem;
+    margin: auto;
+  }
+}

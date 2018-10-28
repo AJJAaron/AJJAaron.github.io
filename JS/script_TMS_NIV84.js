@@ -1,5 +1,5 @@
-var niv = {
-  versionTitle: "NIV",
+var niv84 = {
+  versionTitle: "NIV84",
   packs: [
     // Pack A
     {

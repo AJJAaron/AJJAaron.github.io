@@ -21,6 +21,7 @@
     gtag('config', 'UA-124196645-1');
   </script>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bible Memory | T.M.S.</title>
   <link href="CSS/style_TMS.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -51,54 +52,57 @@
     </div>
   </div>
 
-  <div class="pop-up-container">
-    <div class="pop-up">
-      <div class="sideNav">
-        <i class="material-icons" id="menu-close-icon">close</i>
-        <div class="nav-content">
-          <a href="index.html" class="menu-link" id="menu-link0">
-            Home
-          </a>
-          <a href="BibleMemory_TMS.html" class="menu-link" id="menu-link1">
-            T.M.S.
-          </a>
-          <!--a href="#" class="menu-link" id="menu-link2">
-            The 5 Assurances
-          </a-->
-        </div>
-      </div>
-      <div class="packNav">
-        <i class="material-icons" id="pack-close-icon">close</i>
-        <p class="pack-link" id="pack-link0">A</p>
-        <p class="pack-link" id="pack-link1">B</p>
-        <p class="pack-link" id="pack-link2">C</p>
-        <p class="pack-link" id="pack-link3">D</p>
-        <p class="pack-link" id="pack-link4">E</p>
-      </div>
-      <div class="floatContainer">
-        <div class="versionNav">
-          <div class="version-content">
-            <i class="material-icons check-icon" id="check0">
-              check
-            </i>
-            <p class="version-link" id="version-link0">ESV</p>
-            <i class="material-icons check-icon" id="check1">
-              check
-            </i>
-            <p class="version-link" id="version-link1">NIV</p>
-            <i class="material-icons check-icon" id="check2">
-              check
-            </i>
-            <p class="version-link" id="version-link2">RSV</p>
-            <i class="material-icons check-icon" id="check3">
-              check
-            </i>
-            <p class="version-link" id="version-link3">中文</p>
-          </div>
-        </div>
+
+  <div class="sideNav">
+    <div class="nav-content">
+      <a href="index.html" class="menu-link" id="menu-link0">
+        Home
+      </a>
+      <a href="BibleMemory_TMS.html" class="menu-link" id="menu-link1">
+        T.M.S.
+      </a>
+      <a href="BibleMemory_5A.html" class="menu-link" id="menu-link2">
+        The 5 Assurances
+      </a>
+      <a href="BibleMemory_Feedback.html" class="menu-link" id="menu-link3">
+        Give Feedback
+      </a>
+    </div>
+  </div>
+  <div class="packNav">
+    <p class="pack-link" id="pack-link0">A</p>
+    <p class="pack-link" id="pack-link1">B</p>
+    <p class="pack-link" id="pack-link2">C</p>
+    <p class="pack-link" id="pack-link3">D</p>
+    <p class="pack-link" id="pack-link4">E</p>
+  </div>
+  <div class="floatContainer">
+    <div class="versionNav">
+      <div class="version-content">
+        <i class="material-icons check-icon" id="check0">
+          check
+        </i>
+        <p class="version-link" id="version-link0">ESV</p>
+        <i class="material-icons check-icon" id="check1">
+          check
+        </i>
+        <p class="version-link" id="version-link1">NIV11</p>
+        <i class="material-icons check-icon" id="check2">
+          check
+        </i>
+        <p class="version-link" id="version-link2">NIV84</p>
+        <i class="material-icons check-icon" id="check3">
+          check
+        </i>
+        <p class="version-link" id="version-link3">RSV</p>
+        <i class="material-icons check-icon" id="check4">
+          check
+        </i>
+        <p class="version-link" id="version-link4">中文</p>
       </div>
     </div>
   </div>
+
 
   <!-- Pack verses -->
   <div class="pack">
@@ -106,17 +110,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t0"></h3>
       <div class="verse-container">
-        <div class="number">1</div>
         <div class="verse">
-          <p class="reference-top" id="v00_ref_top"></p>
+          <p class="reference-top" id="v00_ref_top"></p><p class="number">1</p>
           <p class="verse-text" id="v00_txt"></p>
           <p class="reference-end" id="v00_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">2</div>
         <div class="verse">
-          <p class="reference-top" id="v01_ref_top"></p>
+          <p class="reference-top" id="v01_ref_top"></p><p class="number">2</p>
           <p class="verse-text" id="v01_txt"></p>
           <p class="reference-end" id="v01_ref_end"></p>
         </div>
@@ -126,17 +128,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t1"></h3>
       <div class="verse-container">
-        <div class="number">3</div>
         <div class="verse">
-          <p class="reference-top" id="v10_ref_top"></p>
+          <p class="reference-top" id="v10_ref_top"></p><p class="number">3</p>
           <p class="verse-text" id="v10_txt"></p>
           <p class="reference-end" id="v10_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">4</div>
         <div class="verse">
-          <p class="reference-top" id="v11_ref_top"></p>
+          <p class="reference-top" id="v11_ref_top"></p><p class="number">4</p>
           <p class="verse-text" id="v11_txt"></p>
           <p class="reference-end" id="v11_ref_end"></p>
         </div>
@@ -146,17 +146,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t2"></h3>
       <div class="verse-container">
-        <div class="number">5</div>
         <div class="verse">
-          <p class="reference-top" id="v20_ref_top"></p>
+          <p class="reference-top" id="v20_ref_top"></p><p class="number">5</p>
           <p class="verse-text" id="v20_txt"></p>
           <p class="reference-end" id="v20_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">6</div>
         <div class="verse">
-          <p class="reference-top" id="v21_ref_top"></p>
+          <p class="reference-top" id="v21_ref_top"></p><p class="number">6</p>
           <p class="verse-text" id="v21_txt"></p>
           <p class="reference-end" id="v21_ref_end"></p>
         </div>
@@ -166,17 +164,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t3"></h3>
       <div class="verse-container">
-        <div class="number">7</div>
         <div class="verse">
-          <p class="reference-top" id="v30_ref_top"></p>
+          <p class="reference-top" id="v30_ref_top"></p><p class="number">7</p>
           <p class="verse-text" id="v30_txt"></p>
           <p class="reference-end" id="v30_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">8</div>
         <div class="verse">
-          <p class="reference-top" id="v31_ref_top"></p>
+          <p class="reference-top" id="v31_ref_top"></p><p class="number">8</p>
           <p class="verse-text" id="v31_txt"></p>
           <p class="reference-end" id="v31_ref_end"></p>
         </div>
@@ -186,17 +182,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t4"></h3>
       <div class="verse-container">
-        <div class="number">9</div>
         <div class="verse">
-          <p class="reference-top" id="v40_ref_top"></p>
+          <p class="reference-top" id="v40_ref_top"></p><p class="number">9</p>
           <p class="verse-text" id="v40_txt"></p>
           <p class="reference-end" id="v40_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">10</div>
         <div class="verse">
-          <p class="reference-top" id="v41_ref_top"></p>
+          <p class="reference-top" id="v41_ref_top"></p><p class="number">10</p>
           <p class="verse-text" id="v41_txt"></p>
           <p class="reference-end" id="v41_ref_end"></p>
         </div>
@@ -206,17 +200,15 @@
     <div class="theme">
       <h3 class="theme-header" id="t5"></h3>
       <div class="verse-container">
-        <div class="number">11</div>
         <div class="verse">
-          <p class="reference-top" id="v50_ref_top"></p>
+          <p class="reference-top" id="v50_ref_top"></p><p class="number">11</p>
           <p class="verse-text" id="v50_txt"></p>
           <p class="reference-end" id="v50_ref_end"></p>
         </div>
       </div>
       <div class="verse-container">
-        <div class="number">12</div>
         <div class="verse">
-          <p class="reference-top" id="v51_ref_top"></p>
+          <p class="reference-top" id="v51_ref_top"></p><p class="number">12</p>
           <p class="verse-text" id="v51_txt"></p>
           <p class="reference-end" id="v51_ref_end"></p>
         </div>
@@ -230,7 +222,8 @@
     crossorigin="anonymous"></script>
 
   <script src='JS/script_TMS_ESV.js'/></script>
-  <script src='JS/script_TMS_NIV.js'/></script>
+  <script src='JS/script_TMS_NIV11.js'/></script>
+  <script src='JS/script_TMS_NIV84.js'/></script>
   <script src='JS/script_TMS_RSV.js'/></script>
   <script src='JS/script_TMS_CNV.js'/></script>
   <script src='JS/script_TMS.js'></script>
