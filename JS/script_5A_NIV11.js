@@ -1,6 +1,6 @@
 var niv11 = {
   versionTitle: "NIV11",
-  bgColor: "Gold",
+  bgColor: "Coral",
   Color: "Black",
   themes: [
     {

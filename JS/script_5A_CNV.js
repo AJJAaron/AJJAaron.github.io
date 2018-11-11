@@ -1,6 +1,6 @@
 var cnv = {
   versionTitle: "中文",
-  bgColor: "Gold",
+  bgColor: "Coral",
   Color: "Black",
   themes: [
     {

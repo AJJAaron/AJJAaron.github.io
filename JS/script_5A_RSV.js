@@ -1,6 +1,6 @@
 var rsv = {
   versionTitle: "RSV",
-  bgColor: "Gold",
+  bgColor: "Coral",
   Color: "Black",
   themes: [
     {

@@ -1,6 +1,6 @@
 var esv = {
   versionTitle: "ESV",
-  bgColor: "Gold",
+  bgColor: "Coral",
   Color: "Black",
   themes: [
     {

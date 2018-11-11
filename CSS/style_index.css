@@ -2,40 +2,64 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+  /*border: 0.1rem solid rgba(255, 255, 255, 0.3);*/
 }
 
 body {
-  background: url("https://www.friendsjournal.org/wp-content/uploads/2012/05/iStock_p10.jpg") no-repeat center bottom;
+  /*background: url("https://www.friendsjournal.org/wp-content/uploads/2012/05/iStock_p10.jpg") no-repeat center bottom;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-h1 {
-  color: DarkOrange;
-  font-family: 'Rock Salt', cursive;
-  font-size: 80px;
-  text-align: center;
-  width: 800px;
-  margin: auto;
-  margin-top: 10%;
+  background-attachment: fixed;*/
+  background-color: Black;
 }
 
 .container {
-  width: 800px;
-  padding-top: 20px;
-  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+h1 {
+  position: fixed;
+  width: 100%;
+  top: calc(30% - 3rem);
+  height: 6rem;
+  line-height: 6rem;
+  color: DarkOrange;
+  font-family: 'Rock Salt', cursive;
+  font-size: 2.0rem;
   text-align: center;
 }
 
 a.button {
+  position: fixed;
+  width: 8rem;
+  top: calc(30% + 3rem);
+  left: calc(50% - 4rem);
+  padding: 0.2rem 0.5rem;
   background-color: Crimson;
-  border-radius: 10px;
-  width: 200px;
-  padding: 10px 20px;
+  border-radius: 0.5rem;
   font-family: 'Amatic SC', cursive;
-  font-size: 36px;
+  font-size: 1.3rem;
   font-weight: bold;
   color: White;
   text-decoration: none;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 600px), (orientation: landscape) and (min-height: 600px) {
+  h1 {
+    top: calc(30% - 5rem);
+    height: 10rem;
+    line-height: 10rem;
+    font-size: 4.5rem;
+  }
+
+  a.button {
+    width: 14rem;
+    top: calc(30% + 5rem);
+    left: calc(50% - 7rem);
+    padding: 0.5rem 1rem;
+    font-size: 2.2rem;
+  }
 }

@@ -34,7 +34,7 @@ function getPack (version, packID) {
 function versionCheck(versionID, packID) {
   var vStr = versionID.toString();
   $('#check'+vStr).removeClass("hidden-icon");
-  for (v = 0; v < 5; v++) {
+  for (v = 0; v < 6; v++) {
     if (v != versionID) {
       vStr = v.toString();
       $('#check'+vStr).addClass("hidden-icon");
@@ -43,17 +43,17 @@ function versionCheck(versionID, packID) {
   getPack(versionArray[versionID], packID);
 }
 
-var versionArray = [esv, niv11, niv84, rsv, cnv];
-var currVersion = 1;
+var versionArray = [esv, kjv, niv11, niv84, rsv, cnv];
+var currVersion = 2;
 var currPack = 0;
 if (window.matchMedia("(orientation: portrait) and (min-width: 600px), (orientation: landscape) and (min-height: 600px)").matches) {
   var sideNavWidth = "15rem";
   var packNavHeight = "4rem";
-  var versionNavHeight = "15rem";
+  var versionNavHeight = "16rem";
 } else {
   var sideNavWidth = "10rem";
   var packNavHeight = "3rem";
-  var versionNavHeight = "10rem";
+  var versionNavHeight = "12rem";
 }
 getPack (versionArray[currVersion], currPack);
 versionCheck(currVersion, currPack)
@@ -124,6 +124,12 @@ $(document).ready(() => {
     currVersion = 4;
     $('.versionNav').css("height","0");
     ga('send', 'event', 'Version', 'Select', versionArray[4].versionTitle);
+  });
+  $('#version-link5').on('click', () => {
+    versionCheck(5, currPack);
+    currVersion = 5;
+    $('.versionNav').css("height","0");
+    ga('send', 'event', 'Version', 'Select', versionArray[5].versionTitle);
   });
 
   $('#pack-link0').on('click', () => {

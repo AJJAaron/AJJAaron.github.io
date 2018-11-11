@@ -1,6 +1,6 @@
 var niv84 = {
   versionTitle: "NIV84",
-  bgColor: "Gold",
+  bgColor: "Coral",
   Color: "Black",
   themes: [
     {

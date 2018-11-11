@@ -19,7 +19,7 @@ function getPack (version) {
 function versionCheck(versionID) {
   var vStr = versionID.toString();
   $('#check'+vStr).removeClass("hidden-icon");
-  for (v = 0; v < 4; v++) {
+  for (v = 0; v < 5; v++) {
     if (v != versionID) {
       vStr = v.toString();
       $('#check'+vStr).addClass("hidden-icon");
@@ -28,14 +28,14 @@ function versionCheck(versionID) {
   getPack(versionArray[versionID]);
 }
 
-var versionArray = [esv, niv11, niv84, rsv];
-var currVersion = 1;
+var versionArray = [esv, kjv, niv11, niv84, rsv];
+var currVersion = 2;
 if (window.matchMedia("(orientation: portrait) and (min-width: 600px), (orientation: landscape) and (min-height: 600px)").matches) {
   var sideNavWidth = "15rem";
-  var versionNavHeight = "15rem";
+  var versionNavHeight = "16rem";
 } else {
   var sideNavWidth = "10rem";
-  var versionNavHeight = "8rem";
+  var versionNavHeight = "10rem";
 }
 getPack (versionArray[currVersion]);
 versionCheck(currVersion)
@@ -87,5 +87,11 @@ $(document).ready(() => {
     currVersion = 3;
     $('.versionNav').css("height","0");
     ga('send', 'event', 'Version', 'Select', versionArray[3].versionTitle);
+  });
+  $('#version-link4').on('click', () => {
+    versionCheck(4);
+    currVersion = 4;
+    $('.versionNav').css("height","0");
+    ga('send', 'event', 'Version', 'Select', versionArray[4].versionTitle);
   });
 });
