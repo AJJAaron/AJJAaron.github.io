@@ -326,7 +326,7 @@ var rsv = {
             },
             {
               ref: "2 Corinthians 9:6-7",
-              txt: "The point is this: he who sows sparingly will also reap sparingly, and he who sows bountifully will also reap bountifully."
+              txt: "The point is this: he who sows sparingly will also reap sparingly, and he who sows bountifully will also reap bountifully. Each one must do as he has made up his mind, not reluctantly or under compulsion, for God loves a cheerful giver."
             }
           ]
         },
