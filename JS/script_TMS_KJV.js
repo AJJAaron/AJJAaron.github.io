@@ -210,7 +210,7 @@ var kjv = {
           verse: [
             {
               ref: "Lamentations 3:22-23",
-              txt: "It is of the Lord's mercies that we are not consumed, because his compassions fail not."
+              txt: "It is of the Lord's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness."
             },
             {
               ref: "Numbers 23:19",
@@ -296,7 +296,7 @@ var kjv = {
           verse: [
             {
               ref: "1 Corinthians 15:58",
-              txt: "Therefore, my beloved brethren, be ye stedfast, unmoveable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord."
+              txt: "Therefore, my beloved brethren, be ye steadfast, unmoveable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord."
             },
             {
               ref: "Hebrews 12:3",
